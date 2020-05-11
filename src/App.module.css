@@ -5,3 +5,19 @@
   height: 2000px;
   opacity: 75%;
 }
+
+.container {
+  display: flex;
+  height: 200px;
+}
+
+.left {
+  width: 50%;
+  float: left;
+  background: "blue";
+}
+
+.right {
+  flex-grow: 1;
+  background: "red";
+}

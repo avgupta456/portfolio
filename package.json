@@ -14,7 +14,8 @@
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.2.1",
     "react-scripts": "3.4.1",
-    "react-spinners": "^0.8.3"
+    "react-spinners": "^0.8.3",
+    "typeface-roboto": "0.0.75"
   },
   "scripts": {
     "start": "react-scripts start",
