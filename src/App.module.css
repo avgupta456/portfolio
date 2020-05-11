@@ -1,19 +1,20 @@
 .main {
-  margin: 100px auto;
-  padding: 100px 100px;
-  width: 75%;
-  height: 2000px;
-  opacity: 75%;
+  margin: 20px auto;
+  padding: 20px 20px 100px 20px;
+  width: 80%;
+  height: auto;
+  opacity: 95%;
 }
 
 .container {
   display: flex;
-  height: 200px;
+  height: auto;
 }
 
 .left {
-  width: 50%;
+  width: auto;
   float: left;
+  margin-right: 10%;
   background: "blue";
 }
 

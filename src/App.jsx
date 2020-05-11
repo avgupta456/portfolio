@@ -6,6 +6,8 @@ import {Tabs, Background, Profile} from './components'
 
 import 'typeface-roboto';
 
+import Typist from 'react-typist';
+
 class App extends React.Component {
   render() {
     return (
@@ -17,16 +19,20 @@ class App extends React.Component {
             <div className={styles.container}>
               <div className={styles.left}>
                 <Profile />
-                Test 1
               </div>
               <div className={styles.right}>
-                Test2
+              <Typist>
+                <span> First Sentence </span>
+                <Typist.Backspace count={8} delay={200} />
+                <Typist.Delay ms={5000} />
+                <span> Abhijit Gupta </span>
+              </Typist>
               </div>
             </div>
-            <Divider />
+            <br/>
             <Tabs/>
             <Divider />
-            <h1>"Mindset is what separates the best from the rest" - Unknown</h1>
+            <i>"Mindset is what separates the best from the rest" - Unknown</i>
             </div>
           }
         />
