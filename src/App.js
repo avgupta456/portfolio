@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './App.module.css';
-
 import Particles from 'react-particles-js';
+
+import {Button, Paper, Divider} from '@material-ui/core/';
+
+import {Tabs} from './components'
 
 const particle_params = {
   "particles": {
@@ -35,6 +38,21 @@ class App extends React.Component {
   render() {
     return (
       <div>
+
+        <Paper
+          className = {styles.main}
+          children={
+            <div>
+            <Tabs/>
+            <Button variant="contained" color="primary">
+              Hello World
+            </Button>
+            <Divider />
+            <h1>Abhijit Gupta</h1>
+            </div>
+          }
+        />
+
         <Particles className={styles.particles} params={particle_params} />
       </div>
     );

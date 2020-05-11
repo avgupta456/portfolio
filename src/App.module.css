@@ -9,3 +9,11 @@
   left: 0;
   z-index: -1;
 }
+
+.main {
+  margin: 100px auto;
+  padding: 100px 100px;
+  width: 75%;
+  height: 2000px;
+  opacity: 75%;
+}
