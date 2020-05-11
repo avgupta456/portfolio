@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: auto;
+}
+
+.left {
+  width: auto;
+  float: left;
+  margin-right: 10%;
+  background: "blue";
+}
+
+.right {
+  flex-grow: 1;
+  background: "red";
+}

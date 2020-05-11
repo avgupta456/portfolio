@@ -1,24 +1,7 @@
 .main {
   margin: 20px auto;
-  padding: 20px 20px 100px 20px;
-  width: 80%;
+  padding: 0px 0px;
+  width: 95%;
   height: auto;
-  opacity: 95%;
-}
-
-.container {
-  display: flex;
-  height: auto;
-}
-
-.left {
-  width: auto;
-  float: left;
-  margin-right: 10%;
-  background: "blue";
-}
-
-.right {
-  flex-grow: 1;
-  background: "red";
+  opacity: 100%;
 }
