@@ -1,72 +1,4 @@
-.border {
-  /*border: 1px solid red;*/
-}
-/*
-.container {
-  display: flex;
-  height: 100%;
-  min-height: 800px;
-  poition: relative;
-}
-
-.top {
-  width: 300px;
-  height: 400px;
-  position: absolute;
-  top: 0;
-}
-
-.bottom {
-  position: absolute;
-  height: 400px;
-  bottom: 0;
-}
-
-.left {
-  flex-grow: 1;
-  float: left;
-}
-
-.right {
-  width: auto;
-  float: right;
-  margin-left: 5%;
-}
-
-*/
-
-/* Style the header */
 .header {
-  text-align: center;
-}
-
-/* Create three equal columns that floats next to each other */
-.left_column {
-  float: left;
-  /*flex-grow: 1;*/
-  width: 70%;
-}
-
-.right_column {
-  float: right;
-  width: 30%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.name {
   font-family: "Playfair Display SC", "Courier New";
   font-size: 5em;
   text-align: center;
@@ -78,12 +10,64 @@
   height: 40px;
 }
 
-.float_left {
+.left_column {
+  float: left;
+  /*flex-grow: 1;*/
+  width: 70%;
+}
+
+.text {
   float: left;
   padding: 2%;
 }
 
-.float_right {
+.right_column {
+  float: right;
+  width: 30%;
+}
+
+.picture {
   float: right;
   padding: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 900px) {
+  .left_column {
+    width: 100%;
+  }
+  .right_column {
+    width: 100%;
+  }
+  .picture {
+    display:block;
+    margin:auto;
+    float: none;
+    width: 30%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 2em;
+  }
 }

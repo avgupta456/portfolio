@@ -5,3 +5,15 @@
   margin: 0;
   color: #3F51B5
 }
+
+@media (max-width: 620px) {
+  .subheader {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .subheader {
+    font-size: 1em;
+  }
+}

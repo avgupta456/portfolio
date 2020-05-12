@@ -18,8 +18,7 @@ function TabPanel(props: TabPanelProps) {
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
+      id={`scrollable-auto-tabpanel-${index}`}
       {...other}
     >
       {value === index && (
@@ -33,8 +32,7 @@ function TabPanel(props: TabPanelProps) {
 
 function a11yProps(index: any) {
   return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    id: `scrollable-auto-tab-${index}`,
   };
 }
 
@@ -43,6 +41,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
   },
+  tab_root: {
+    justifyContent: "center",
+  },
+  scroller: {
+    flexGrow: 0,
+  }
 }));
 
 export default function SimpleTabs() {
@@ -56,7 +60,13 @@ export default function SimpleTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
+        <Tabs
+          classes={{root: classes.tab_root, scroller: classes.scroller}}
+          value={value}
+          onChange={handleChange}
+          variant="scrollable"
+          scrollButtons="on"
+        >
           <Tab label="About" {...a11yProps(0)} />
           <Tab label="Experience" {...a11yProps(1)} />
           <Tab label="Education" {...a11yProps(2)} />
