@@ -1,3 +1,7 @@
 5/10/2020
 - set up React environment
 - used cssgradiant.io and react-particles-js to create background
+
+5/11/2020
+- Decided on material-ui for framework
+- Used react-typist and react-typist-loop for fancy about page
