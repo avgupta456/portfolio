@@ -1,6 +1,25 @@
+.border {
+  /*border: 1px solid red;*/
+}
+/*
 .container {
   display: flex;
-  height: auto;
+  height: 100%;
+  min-height: 800px;
+  poition: relative;
+}
+
+.top {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+}
+
+.bottom {
+  position: absolute;
+  height: 400px;
+  bottom: 0;
 }
 
 .left {
@@ -10,11 +29,44 @@
 
 .right {
   width: auto;
-  float: left;
+  float: right;
   margin-left: 5%;
 }
 
+*/
+
+/* Style the header */
 .header {
+  text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.left_column {
+  float: left;
+  /*flex-grow: 1;*/
+  width: 70%;
+}
+
+.right_column {
+  float: right;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.name {
   font-family: "Playfair Display SC", "Courier New";
   font-size: 5em;
   text-align: center;
@@ -22,6 +74,16 @@
   margin: 0;
 }
 
-.fixHeight {
+.fix_height {
   height: 40px;
+}
+
+.float_left {
+  float: left;
+  padding: 2%;
+}
+
+.float_right {
+  float: right;
+  padding: 2%;
 }
