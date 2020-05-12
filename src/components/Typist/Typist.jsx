@@ -8,7 +8,7 @@ import './main.scss';
 
 export default function TypeLoop() {
   return (
-    <TypistLoop interval={1500}>
+    <TypistLoop interval={1000}>
       {[
         'Computer Scientist',
         'Bhangra Dancer',
@@ -22,8 +22,8 @@ export default function TypeLoop() {
           className={styles.subheader}
         >
           {text}
-          <Typist.Delay ms={1000} />
-          <Typist.Backspace count={text.length} delay={200} />
+          <Typist.Delay ms={1500} />
+          <Typist.Backspace count={text.length}/>
         </Typist>
       )}
     </TypistLoop>
