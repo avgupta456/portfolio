@@ -9,6 +9,7 @@ import styles from './About.module.css'
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
+    flex: "0 0 100px",
   },
 }));
 
@@ -24,7 +25,6 @@ export default function About() {
       <br/>
       <Divider/>
       <br/>
-
     <div className={styles.row}>
       <div className={styles.left_column}>
         <div className={styles.text}>
