@@ -21,6 +21,11 @@
   padding: 2%;
 }
 
+.buttons {
+  width: 435px;
+  margin: auto;
+}
+
 .right_column {
   float: right;
   width: 30%;
@@ -47,8 +52,8 @@
     width: 100%;
   }
   .picture {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     float: none;
     width: 30%;
   }
