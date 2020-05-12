@@ -4,13 +4,24 @@
 }
 
 .left {
-  width: auto;
+  flex-grow: 1;
   float: left;
-  margin-right: 10%;
-  background: "blue";
 }
 
 .right {
-  flex-grow: 1;
-  background: "red";
+  width: auto;
+  float: left;
+  margin-left: 5%;
+}
+
+.header {
+  font-family: "Playfair Display SC", "Courier New";
+  font-size: 5em;
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+
+.fixHeight {
+  height: 40px;
 }

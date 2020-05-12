@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.module.css';
 
-import {Paper, Divider} from '@material-ui/core/';
+import {Divider} from '@material-ui/core/';
 import {Tabs, Background} from './components';
 import 'typeface-roboto';
 

@@ -10,12 +10,14 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.2.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.2.1",
     "react-scripts": "3.4.1",
     "react-spinners": "^0.8.3",
     "react-typist": "^2.0.5",
+    "react-typist-loop": "0.0.5",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {
