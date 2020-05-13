@@ -1,12 +1,21 @@
 import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Button } from '@material-ui/core';
+import { Typography, Button, Avatar } from '@material-ui/core';
 
-import { Profile } from './..'
 import styles from './About.module.css'
+import pic from "./../../static/images/avatar.jpg";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex', '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+  profile: {
+    width: theme.spacing(25),
+    height: theme.spacing(25),
+  },
   button: {
     margin: theme.spacing(1),
     flex: "0 0 100px",
@@ -36,7 +45,7 @@ export default function About() {
         </div>
         <div className={styles.right_column}>
           <div className={styles.picture}>
-            <Profile/>
+            <Avatar alt="Abhijit Gupta" src={pic} className={classes.profile} variant="rounded"/>
           </div>
         </div>
       </div>
