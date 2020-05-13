@@ -1,9 +1,9 @@
 .subheader {
   font-family: "Playfair Display SC", "Courier New";
+  color: #3F51B5; /*primary-main*/
   font-size: 2em;
   text-align: center;
   margin: 0;
-  color: #3F51B5
 }
 
 @media (max-width: 620px) {

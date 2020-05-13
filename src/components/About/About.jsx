@@ -31,7 +31,7 @@ export default function About() {
           <Typography>
           Hello! My name is Abhijit Gupta, and I am a junior at Yale University, majoring in Computer Science and Applied Mathematics.
           I am a member of the Yale Interactive Machines Group, where I conduct research in the field of human-robot interaction using deep learning.
-          I am a developer for the Yale Computer Society, and help organize YHack, Yale’s largest annual hackathon.
+          I'm also a developer for the Yale Computer Society, and help organize YHack, Yale’s largest annual hackathon.
           This past summer, I interned at RTI International as a data warehouse intern, working on ___.
           In my free time, I enjoy dancing and climbing.
           </Typography>
