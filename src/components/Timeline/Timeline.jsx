@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {Typography} from '@material-ui/core';
-import { withStyles } from "@material-ui/core/styles";
 import WorkIcon from '@material-ui/icons/Work';
 import StarIcon from '@material-ui/icons/Star';
 
