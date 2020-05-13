@@ -76,29 +76,33 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Header />
-        <About />
+        <Header/>
+        <About/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Header/>
         <Timeline/>
       </TabPanel>
       <TabPanel value={value} index={2}>
+        <Header/>
         <Typography>
           Cards?
         </Typography>
       </TabPanel>
       <TabPanel value={value} index={3}>
+        <Header/>
         <Typography>
           Cards!
         </Typography>
       </TabPanel>
       <TabPanel value={value} index={4}>
+        <Header/>
         <Typography>
           Unknown
         </Typography>
       </TabPanel>
       <TabPanel value={value} index={5}>
+        <Header/>
         <Typography>
           Unknown
         </Typography>
