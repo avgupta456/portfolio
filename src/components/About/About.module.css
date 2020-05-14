@@ -24,11 +24,9 @@
 }
 
 .buttons {
-  width: 470px;
-  margin: auto;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 10%; /*Kinda hacky*/
+  justify-content: center;
 }
 
 .picture {
