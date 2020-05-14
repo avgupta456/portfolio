@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '50%',
+    width: '100%',
   },
   header: {
     backgroundColor: theme.palette.primary.main,
@@ -19,30 +19,43 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Skills() {
+function Panel({header, array}) {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={styles.column}>
       <ExpansionPanel expanded={true} className={classes.root}>
         <ExpansionPanelSummary className={classes.header}>
-          <Typography variant="h6" className={classes.white}>Programming Languages</Typography>
+          <Typography variant="h6" className={classes.white}>{header}</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails  className={styles.row}>
-        <div className={styles.left_column}>
-          <Typography variant="h6">Python</Typography>
-        </div>
-        <div className={styles.right_column}>
-          <ProgressBar animated now={90} className={styles.bar}/>
-        </div>
-        <div className={styles.left_column}>
-          <Typography variant="h6">Java</Typography>
-        </div>
-        <div className={styles.right_column}>
-          <ProgressBar animated now={60} className={styles.bar}/>
-        </div>
+          {array.map((data) => {
+            return (
+              <div className={styles.max_width}>
+                <div className={styles.left_column}>
+                  <Typography variant="h6">{data.name}</Typography>
+                </div>
+                <div className={styles.right_column}>
+                  <ProgressBar animated now={data.score}/>
+                </div>
+              </div>
+            );
+          })}
         </ExpansionPanelDetails>
       </ExpansionPanel>
+    </div>
+  );
+}
+
+export default function Skills() {
+  const array = [{name:"Python", score:90}, {name:"Java", score: 75}]
+  const array2 = [{name:"Python", score:90}, {name:"Java", score: 75}, {name:"React", score: 50}]
+
+  return (
+    <div className={styles.row}>
+      <Panel header="Programming Languages" array={array}/>
+      <Panel header="Frameworks" array={array2}/>
+      <Panel header="Tools" array={array}/>
     </div>
   );
 }
