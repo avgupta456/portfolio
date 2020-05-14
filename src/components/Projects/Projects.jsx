@@ -1,7 +1,8 @@
 import React from "react";
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, CardHeader, Typography, Paper, Chip, Button } from "@material-ui/core";
+import { Card, CardContent, CardHeader } from "@material-ui/core";
+import { Typography, Paper, Chip, Button } from "@material-ui/core";
 import styles from './Projects.module.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -127,7 +128,7 @@ export default function Projects() {
             name="Personal Website"
             date="May 2020"
             description="Built a personal website from scratch using React, HTML/CSS, and the Material-UI component library to display my portfolio and improve my web development skills."
-            array={[{key:0,label:'React'}, {key:1,label:'HTML/CSS'}, {key:2,label:'Material-UI'}, {key:3,label:'CI/CD'}, {key:4,label:'Github Pages'}]}
+            array={[{key:0,label:'React'}, {key:1,label:'HTML/CSS'}, {key:2,label:'Material-UI'}, {key:3,label:'CI/CD'}]}
             github="https://github.com/avgupta456/personal_website"
           />
         </div>
@@ -136,7 +137,7 @@ export default function Projects() {
             name="Project Horus"
             date="September 2019"
             description="Developed a receipt scanning app to detect healthy spending habits during the 2019 HackMIT event. Won the Instabase API sponsor award and the Financial Technology Track"
-            array={[{key:0,label:'Python'}, {key:1,label:'AWS Textract'}, {key:2,label:'Machine Learning'}, {key:3,label:'NLP/OCR'}, {key:4,label:'HTML/CSS/JS'}]}
+            array={[{key:0,label:'Python'}, {key:1,label:'AWS Textract'}, {key:2,label:'NLP'}, {key:3,label:'OCR'}, {key:4,label:'HTML/CSS'}]}
             github="https://github.com/avgupta456/HackMIT-2019"
           />
         </div>

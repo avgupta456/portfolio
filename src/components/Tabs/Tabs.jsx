@@ -2,8 +2,7 @@ import React from 'react';
 
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import {AppBar, Tabs, Tab, Box, Typography} from '@material-ui/core';
-
-import { Header, About, Experience, Education, Projects } from './..'
+import { Header, About, Experience, Education, Projects, Skills } from './..'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -73,6 +72,7 @@ export default function SimpleTabs() {
           <Tab label="Projects" {...a11yProps(3)} />
           <Tab label="Skills" {...a11yProps(4)} />
           <Tab label="Awards" {...a11yProps(5)} />
+          <Tab label="Personal" {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -93,11 +93,15 @@ export default function SimpleTabs() {
       </TabPanel>
       <TabPanel value={value} index={4}>
         <Header/>
+        <Skills/>
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        <Header/>
         <Typography>
           Unknown
         </Typography>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={6}>
         <Header/>
         <Typography>
           Unknown
