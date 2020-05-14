@@ -3,6 +3,8 @@ import styles from './App.module.css';
 
 import {Divider} from '@material-ui/core/';
 import {Tabs, Background} from './components';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-roboto';
 
 
