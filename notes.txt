@@ -13,3 +13,7 @@
 5/13/2020
 - Reorganized, created education and project tabs
 - Populated with correct information
+
+5/14/2020
+- Added new tabs for skills, awards, contact
+- published to Github Pages
