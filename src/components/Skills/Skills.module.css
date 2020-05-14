@@ -23,14 +23,14 @@
 }
 
 .left_column {
-  flex: 0 0 100px;  /* grow */
-  margin: 20px;
+  flex: 0 0 120px;  /* grow */
+  margin: 10px 20px 20px 10px;
 }
 
 .right_column {
   flex: 1;  /* grow */
   min-width: calc(100% - 180px);
-  margin: 20px;
+  margin: 10px 10px 20px 20px;
   padding: 8px;
 }
 
