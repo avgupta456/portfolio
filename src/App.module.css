@@ -5,3 +5,13 @@
   height: auto;
   opacity: 90%;
 }
+
+@media (max-width: 900px) {
+  .main {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: auto;
+    height: auto;
+    opacity: 100%;
+  }
+}

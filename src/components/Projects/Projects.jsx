@@ -62,7 +62,7 @@ function FancyHeaderCard({name, date, description, array, github}) {
             {name}
             <Button
               variant="contained"
-              color="secondary"
+              color="primary-dark"
               className={classes.button}
               href={github}
               target="_blank"

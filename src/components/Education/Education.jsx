@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   new: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.light,
   },
   old: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.light,
   },
   icon: {
     color: theme.palette.common.white,
