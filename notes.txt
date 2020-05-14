@@ -5,3 +5,11 @@
 5/11/2020
 - Decided on material-ui for framework
 - Used react-typist and react-typist-loop for fancy about page
+
+5/12/2020
+- Built out timeline using external library
+- Made an issue in Github to improve documentation
+
+5/13/2020
+- Reorganized, created education and project tabs
+- Populated with correct information

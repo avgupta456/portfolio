@@ -8,7 +8,7 @@ import {Typography} from '@material-ui/core';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import styles from './Timeline.module.css'
+import styles from './Experience.module.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 function TimelineElement({title, location, date, details, color}) {
   const classes = useStyles();
-  
+
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -38,7 +38,7 @@ function TimelineElement({title, location, date, details, color}) {
 }
 
 export default function Timeline(props) {
-  const primary_light = '#7986cb'
+  const primary = '#3f51b5'
   const secondary = '#f50057'
 
   return (
@@ -59,21 +59,21 @@ export default function Timeline(props) {
         location = "Raleigh, North Carolina"
         date = "May 2020 - August 2020"
         details = "FILL IN"
-        color = {primary_light}
+        color = {primary}
       />
       <TimelineElement
         title = "Computer Science Instructor | Juni Learning"
         location = "Remote"
         date = "February 2020 - July 2020"
         details = "Teach middle school and high school students computer science fundamentals (in Java and Python) through the online Juni Learning platform."
-        color = {primary_light}
+        color = {primary}
       />
       <TimelineElement
         title = "Undergraduate Researcher | Yale University (LILY Lab)"
         location = "New Haven, Connecticut"
         date = "August 2019 - December 2019"
         details = "Developed machine learning models classifying salient events in physics simulations as part of a project studying implicit physical reasoning in the Facebook AI PHYRE Project; in collaboration with Salesforce Research. Used Python, scikit-learn."
-        color = {primary_light}
+        color = {primary}
       />
       <VerticalTimelineElement
         iconStyle={{ background: '#4caf50', color: '#fff' }}
