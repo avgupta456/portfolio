@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { makeStyles, Theme } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Box, Typography, Divider } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
 import { Header, About, Experience, Education, Projects, Skills, Awards, ButtonBar } from './..'
 import styles from './Tabs.module.css'
 
@@ -103,7 +103,9 @@ export default function SimpleTabs() {
       <TabPanel value={value} index={6}>
         <Header/>
         <Typography className={styles.center}>
-          If you are interested in working with me, please contact me via email, at <a href="mailto:abhijit.gupta@yale.edu" target='_blank'>abhijit.gupta@yale.edu</a>. I look forward to discussing, thank you!
+          If you are interested in working with me, please contact me via email, at 
+          <a href="mailto:abhijit.gupta@yale.edu" target='_blank' rel="noopener noreferrer">abhijit.gupta@yale.edu</a>.
+          I look forward to discussing, thank you!
         </Typography>
         <br/>
         <ButtonBar/>
