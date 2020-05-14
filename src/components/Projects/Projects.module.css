@@ -25,13 +25,11 @@
 
 .title {
   color: white;
-  letter-spacing: 1;
 }
 
 .subheader {
   color: white !important;
   opacity: 0.7;
-  letter-spacing: 0.4;
 }
 
 .inner {

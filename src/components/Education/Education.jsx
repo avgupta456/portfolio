@@ -22,13 +22,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.common.white,
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.common.white,
-    flexBasis: '33.33%',
-    flexShrink: 0,
-  },
-  secondaryHeading: {
+  date: {
     fontSize: theme.typography.pxToRem(15),
     color: theme.palette.common.white,
     marginRight: 0,
@@ -48,8 +42,8 @@ export default function Education() {
     <div className={classes.root}>
       <ExpansionPanel expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary className={classes.new} expandIcon={<ExpandMoreIcon className={classes.icon}/>}>
-          <Typography className={classes.heading}>Yale University</Typography>
-          <Typography className={classes.secondaryHeading}>Expected May 2022</Typography>
+          <Typography variant="h6" className={classes.icon}>Yale University</Typography>
+          <Typography className={classes.date}>Expected May 2022</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <div>
@@ -70,8 +64,8 @@ export default function Education() {
       <br/>
       <ExpansionPanel expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <ExpansionPanelSummary className={classes.old} expandIcon={<ExpandMoreIcon className={classes.icon}/>}>
-          <Typography className={classes.heading}>North Carolina School of Science and Mathematics</Typography>
-          <Typography className={classes.secondaryHeading}>August 2017 - May 2019</Typography>
+          <Typography variant="h6" className={classes.icon}>North Carolina School of Science and Mathematics</Typography>
+          <Typography className={classes.date}>August 2017 - May 2019</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
         <div>
@@ -92,8 +86,8 @@ export default function Education() {
       <br/>
       <ExpansionPanel expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <ExpansionPanelSummary className={classes.old} expandIcon={<ExpandMoreIcon className={classes.icon}/>}>
-          <Typography className={classes.heading}>Panther Creek High School</Typography>
-          <Typography className={classes.secondaryHeading}>August 2015 - June 2017</Typography>
+          <Typography variant="h6" className={classes.icon}>Panther Creek High School</Typography>
+          <Typography className={classes.date}>August 2015 - June 2017</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
         <div>
