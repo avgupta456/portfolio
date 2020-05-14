@@ -36,7 +36,7 @@ function Panel({header, array}) {
                   <Typography variant="h6">{data.name}</Typography>
                 </div>
                 <div className={styles.right_column}>
-                  <ProgressBar animated now={data.score}/>
+                  <ProgressBar striped now={data.score}/>
                 </div>
               </div>
             );

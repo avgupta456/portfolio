@@ -39,7 +39,6 @@ function TimelineElement({title, location, date, details, color}) {
 
 export default function Timeline(props) {
   const primary_light = '#7986cb'
-  const secondary = '#f50057'
 
   return (
     <VerticalTimeline

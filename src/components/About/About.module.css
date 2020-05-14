@@ -19,8 +19,7 @@
 
 .text {
   float: left;
-  width: 96%;
-  padding: 2%;
+  width: 100%;
 }
 
 .buttons {
@@ -30,9 +29,8 @@
 }
 
 .picture {
-  width: 200px;
+  width: 250px;
   margin: auto;
-  padding: 2%;
 }
 
 @media (max-width: 900px) {
