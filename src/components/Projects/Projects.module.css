@@ -64,5 +64,6 @@
 .column {
   flex: 1;  /* grow */
   min-width: 40%;
-  margin: 30px;
+  max-width: 45%;
+  margin: 20px;
 }
