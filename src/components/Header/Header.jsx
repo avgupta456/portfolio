@@ -17,9 +17,9 @@ export default function Header() {
       <TypistLoop interval={1000}>
         {[
           'Computer Scientist',
-          'Bhangra Dancer',
+          'Problem-Solver',
           'Data Scientist',
-          'Rock Climber',
+          'Full Stack Developer',
           'Researcher',
         ].map(text =>
           <Typist

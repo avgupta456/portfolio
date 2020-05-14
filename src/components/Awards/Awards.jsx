@@ -18,9 +18,7 @@ function Award({name, desc}) {
 export default function Awards() {
   return (
     <Paper className={styles.padding}>
-      <Typography variant="h5">
-        Recent Awards
-      </Typography>
+      <Typography variant="h5">Recent Awards:</Typography>
       <Award
         name="2020 Yale Summer STEM Research Fellowship"
         desc="Awarded the Yale Summer STEM Research Fellowship with stipend to continue conducting research into the automated detection of conversation groupings using computer vision and deep learning techniques."

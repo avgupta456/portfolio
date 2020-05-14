@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { makeStyles, Theme } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
-import { Header, About, Experience, Education, Projects, Skills, Awards } from './..'
+import { AppBar, Tabs, Tab, Box, Typography, Divider } from '@material-ui/core';
+import { Header, About, Experience, Education, Projects, Skills, Awards, ButtonBar } from './..'
+import styles from './Tabs.module.css'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -72,7 +73,7 @@ export default function SimpleTabs() {
           <Tab label="Projects" {...a11yProps(3)} />
           <Tab label="Skills" {...a11yProps(4)} />
           <Tab label="Awards" {...a11yProps(5)} />
-          <Tab label="Personal" {...a11yProps(6)} />
+          <Tab label="Contact" {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -101,9 +102,11 @@ export default function SimpleTabs() {
       </TabPanel>
       <TabPanel value={value} index={6}>
         <Header/>
-        <Typography>
-          Unknown
+        <Typography className={styles.center}>
+          If you are interested in working with me, please contact me via email, at <a href="mailto:abhijit.gupta@yale.edu" target='_blank'>abhijit.gupta@yale.edu</a>. I look forward to discussing, thank you!
         </Typography>
+        <br/>
+        <ButtonBar/>
       </TabPanel>
     </div>
   );

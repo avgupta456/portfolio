@@ -14,7 +14,8 @@
 }
 
 .right_column {
-  flex: 0 0 256px; /* fixed */
+  flex: 0 0 250px; /* fixed */
+  margin-left: 20px;
 }
 
 .text {
@@ -42,6 +43,7 @@
     .right_column {
       flex: none;
       width: 100%;
+      margin-left: 0px;
     }
 }
 

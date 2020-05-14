@@ -100,7 +100,7 @@ export default function Projects() {
           <FancyHeaderCard
             name="DANTE Extension"
             date="January 2020 - Present"
-            description="Researching the automated detection of conversation structures using computer vision and deep learning techniques. I am currently extending the DANTE algorithm to encorporate input features such as body pose and skeletal markers."
+            description="Researching the automated detection of conversation structures using computer vision and deep learning techniques. I am currently extending the DANTE algorithm to encorporate additional input features such as body pose and skeletal markers."
             array={[{key:0,label:'Python'}, {key:1,label:'TensorFlow'}, {key:2,label:'Deep Learning'}, {key:3,label:'ROS'}]}
             github="https://github.com/avgupta456/cpsc290"
           />

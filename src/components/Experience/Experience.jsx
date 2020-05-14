@@ -74,8 +74,22 @@ export default function Timeline(props) {
         details = "Developed machine learning models classifying salient events in physics simulations as part of a project studying implicit physical reasoning in the Facebook AI PHYRE Project; in collaboration with Salesforce Research. Used Python, scikit-learn."
         color = {primary_light}
       />
+      <TimelineElement
+        title = "Captain | FRC 5511 Cortechs Robotics"
+        location = "Cary, North Carolina"
+        date = "August 2015 - July 2019"
+        details = "Led team of forty members, handled budget of over $50,000, built and programmed 100+ pound robots, competed locally and internationally in the FIRST Robotics Competition, spread STEM education to underserved communities."
+        color = {primary_light}
+      />
+      <TimelineElement
+        title = "Student Researcher | UNC-Chapel Hill"
+        location = "Durham, North Carolina"
+        date = "November 2017 - May 2019"
+        details = "Analyzed the Effects of Relativity on the Quadrupole Oscillation of Compact Objects using computational methods."
+        color = {primary_light}
+      />
       <VerticalTimelineElement
-        iconStyle={{ background: '#4caf50', color: '#fff' }}
+        iconStyle={{ background: `${primary_light}`, color: '#fff' }}
         icon={<StarIcon />}
       />
     </VerticalTimeline>

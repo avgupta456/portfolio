@@ -22,6 +22,53 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+export function ButtonBar() {
+  const classes = useStyles();
+  return (
+    <div>
+      <div className={styles.buttons}>
+        <Button
+          variant="outlined"
+          color="secondary"
+          className={classes.button}
+          href="mailto:abhijit.gupta@yale.edu"
+          target="_blank"
+        >
+          <Typography>Email</Typography>
+        </Button>
+        <Button
+          variant="outlined"
+          color="secondary"
+          className={classes.button}
+          href="https://github.com/avgupta456"
+          target="_blank"
+        >
+          <Typography>Github</Typography>
+        </Button>
+        <Button
+          variant="outlined"
+          color="secondary"
+          className={classes.button}
+          href="https://www.linkedin.com/in/avgupta456"
+          target="_blank"
+        >
+          <Typography>LinkedIn</Typography>
+        </Button>
+        <Button
+          variant="outlined"
+          color="secondary"
+          className={classes.button}
+          href={process.env.PUBLIC_URL + '/resume.pdf'}
+          target='_blank'
+        >
+          <Typography>Resume</Typography>
+        </Button>
+      </div>
+      <br/>
+    </div>
+  );
+}
+
 export default function About() {
   const classes = useStyles();
 
@@ -44,44 +91,7 @@ export default function About() {
             <br/>
             <Divider/>
             <br/>
-            <div className={styles.buttons}>
-              <Button
-                variant="outlined"
-                color="secondary"
-                className={classes.button}
-                href="mailto:abhijit.gupta@yale.edu"
-                target="_blank"
-              >
-                <Typography>Email</Typography>
-              </Button>
-              <Button
-                variant="outlined"
-                color="secondary"
-                className={classes.button}
-                href="https://github.com/avgupta456"
-                target="_blank"
-              >
-                <Typography>Github</Typography>
-              </Button>
-              <Button
-                variant="outlined"
-                color="secondary"
-                className={classes.button}
-                href="https://www.linkedin.com/in/avgupta456"
-                target="_blank"
-              >
-                <Typography>LinkedIn</Typography>
-              </Button>
-              <Button
-                variant="outlined"
-                color="secondary"
-                className={classes.button}
-                href={process.env.PUBLIC_URL + '/resume.pdf'}
-                target='_blank'
-              >
-                <Typography>Resume</Typography>
-              </Button>
-            </div>
+            <ButtonBar/>
           </div>
         </div>
         <div className={styles.right_column}>
