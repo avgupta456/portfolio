@@ -34,5 +34,12 @@
   padding: 8px;
 }
 
-.bar {
+@media (max-width: 900px) {
+    .column {
+      flex: none;
+      width: 100%;
+      min-width: none;
+      max-width: none;
+      margin: 20px 0px;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails } from "@material-ui/core";
-import { Typography, Paper } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import { ProgressBar } from 'react-bootstrap';
 import styles from './Skills.module.css';
 
@@ -36,7 +36,7 @@ function Panel({header, array}) {
                   <Typography variant="h6">{data.name}</Typography>
                 </div>
                 <div className={styles.right_column}>
-                  <ProgressBar animated now={data.score}/>
+                  <ProgressBar striped now={data.score}/>
                 </div>
               </div>
             );
