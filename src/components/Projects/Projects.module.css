@@ -6,7 +6,7 @@
 
   margin: auto 0px 40px 0px;
   padding: 16px 0;
-  border: 1px dotted #7986cb; /*primary-light*/
+  border: 1px dotted #3f51b5; /*primary-main*/
 
   overflow: visible !important;
 }
@@ -16,7 +16,7 @@
   top: -40px;
   bottom: 0px;
 
-  background: #7986cb; /*primary-light*/
+  background: #3f51b5; /*primary-main*/
   box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.2);
 
   margin: 0 20px;

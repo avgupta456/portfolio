@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   header: {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.main,
   },
   white: {
     color: theme.palette.common.white,
