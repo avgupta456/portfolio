@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <div>
-      <p className={styles.header}>ABHIJIT GUPTA Test</p>
+      <p className={styles.header}>ABHIJIT GUPTA</p>
       <div className={styles.fix_height}>
       <TypistLoop interval={1000}>
         {[
