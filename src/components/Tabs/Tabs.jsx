@@ -103,8 +103,7 @@ export default function SimpleTabs() {
       <TabPanel value={value} index={6}>
         <Header/>
         <Typography className={styles.center}>
-          If you are interested in working with me, please contact me via email, at 
-          <a href="mailto:abhijit.gupta@yale.edu" target='_blank' rel="noopener noreferrer">abhijit.gupta@yale.edu</a>.
+          If you are interested in working with me, please contact me via email, at <a href="mailto:abhijit.gupta@yale.edu" target='_blank' rel="noopener noreferrer">abhijit.gupta@yale.edu</a>.
           I look forward to discussing, thank you!
         </Typography>
         <br/>

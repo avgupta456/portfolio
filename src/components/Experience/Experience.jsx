@@ -47,42 +47,43 @@ export default function Timeline(props) {
       className={styles.line}
     >
       <TimelineElement
-        title = "Undergraduate Researcher | Yale University (Interactive Machines Group)"
+        title = <Typography variant="h6" className="vertical-timeline-element-title">Undergraduate Researcher | Yale University (<a href='http://interactive-machines.com/' target="_blank" rel="noopener noreferrer">Interactive Machines Group</a>)</Typography>
         location = "New Haven, Connecticut"
         date = "January 2020 - Present"
         details = "Developing a deep learning pipeline studying social group phenomena in the context of human-robot interaction (HRI); to be implemented on the Yale IMG Shutter Robot. Using Python, TensorFlow, and ROS."
         color = {primary_light}
       />
       <TimelineElement
-        title = "Data Warehouse Intern | RTI International"
+        title = <Typography variant="h6" className="vertical-timeline-element-title">Data Warehouse Intern | <a href='https://www.rti.org/' target="_blank" rel="noopener noreferrer">RTI International</a></Typography>
         location = "Raleigh, North Carolina"
         date = "May 2020 - August 2020"
-        details = "FILL IN"
         color = {primary_light}
+        details = "Incoming Data Warehouse Intern at RTI International"
       />
       <TimelineElement
-        title = "Computer Science Instructor | Juni Learning"
+        title = <Typography variant="h6" className="vertical-timeline-element-title">Computer Science Instructor | <a href='https://junilearning.com/' target="_blank" rel="noopener noreferrer">Juni Learning</a></Typography>
         location = "Remote"
         date = "February 2020 - July 2020"
         details = "Teach middle school and high school students computer science fundamentals (in Java and Python) through the online Juni Learning platform."
         color = {primary_light}
       />
       <TimelineElement
-        title = "Undergraduate Researcher | Yale University (LILY Lab)"
+        title = <Typography variant="h6" className="vertical-timeline-element-title">Undergraduate Researcher | Yale University (<a href='https://yale-lily.github.io/' target="_blank" rel="noopener noreferrer">LILY Lab</a>)</Typography>
         location = "New Haven, Connecticut"
         date = "August 2019 - December 2019"
-        details = "Developed machine learning models classifying salient events in physics simulations as part of a project studying implicit physical reasoning in the Facebook AI PHYRE Project; in collaboration with Salesforce Research. Used Python, scikit-learn."
         color = {primary_light}
+        details = <p>Developed machine learning models classifying salient events in physics simulations as part of a larger project studying implicit physical reasoning in natural language processing.
+          Paper available <a href='https://arxiv.org/abs/2005.00730' target="_blank" rel="noopener noreferrer">here</a></p>
       />
       <TimelineElement
-        title = "Captain | FRC 5511 Cortechs Robotics"
+        title = <Typography variant="h6" className="vertical-timeline-element-title">Captain | <a href='https://cortechsrobotics.com/' target="_blank" rel="noopener noreferrer">FRC 5511 Cortechs Robotics</a></Typography>
         location = "Cary, North Carolina"
         date = "August 2015 - July 2019"
         details = "Led team of forty members, handled budget of over $50,000, built and programmed 100+ pound robots, competed locally and internationally in the FIRST Robotics Competition, spread STEM education to underserved communities."
         color = {primary_light}
       />
       <TimelineElement
-        title = "Student Researcher | UNC-Chapel Hill"
+        title = <Typography variant="h6" className="vertical-timeline-element-title">Student Researcher | UNC-Chapel Hill</Typography>
         location = "Durham, North Carolina"
         date = "November 2017 - May 2019"
         details = "Analyzed the Effects of Relativity on the Quadrupole Oscillation of Compact Objects using computational methods."
