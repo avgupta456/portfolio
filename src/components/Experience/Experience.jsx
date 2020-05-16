@@ -56,14 +56,14 @@ export default function Timeline(props) {
       <TimelineElement
         title = <Typography variant="h6" className="vertical-timeline-element-title">Data Warehouse Intern | <a href='https://www.rti.org/' target="_blank" rel="noopener noreferrer">RTI International</a></Typography>
         location = "Raleigh, North Carolina"
-        date = "May 2020 - August 2020"
+        date = "May 2020 - Present"
         details = "Incoming Data Warehouse Intern at RTI International"
         color = {primary}
       />
       <TimelineElement
         title = <Typography variant="h6" className="vertical-timeline-element-title">Computer Science Instructor | <a href='https://junilearning.com/' target="_blank" rel="noopener noreferrer">Juni Learning</a></Typography>
         location = "Remote"
-        date = "February 2020 - July 2020"
+        date = "February 2020 - Present"
         details = "Teach middle school and high school students computer science fundamentals (in Java and Python) through the online Juni Learning platform."
         color = {primary}
       />

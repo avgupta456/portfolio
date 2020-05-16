@@ -17,3 +17,7 @@
 5/14/2020
 - Added new tabs for skills, awards, contact
 - published to Github Pages
+
+5/15/2020
+- Set up TravisCI, Google Analytics
+- Updated Content
