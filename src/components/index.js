@@ -1,4 +1,3 @@
-export { default as Background } from './Particles/Particles.js';
 export { default as Header } from './Header/Header.js';
 export { default as Tabs } from './Tabs/Tabs.js';
 export { default as About } from './About/About.js';
