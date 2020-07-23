@@ -21,3 +21,6 @@
 5/15/2020
 - Set up TravisCI, Google Analytics
 - Updated Content
+
+7/23/2020
+- Setup Heroku
