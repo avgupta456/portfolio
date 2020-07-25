@@ -98,28 +98,28 @@ export default function Projects() {
       <div className={styles.row}>
         <div className={styles.column}>
           <FancyHeaderCard
-            name="DANTE Extension"
+            name="Statbotics.io"
             date="January 2020 - Present"
-            description="Researching the automated detection of conversation structures using computer vision and deep learning techniques. I am currently extending the DANTE algorithm to encorporate additional input features such as body pose and skeletal markers."
-            array={[{key:0,label:'Python'}, {key:1,label:'TensorFlow'}, {key:2,label:'Deep Learning'}, {key:3,label:'ROS'}]}
-            github="https://github.com/avgupta456/cpsc290"
+            description=<p>Developing a full-stack open-source data analytics platform for the FIRST Robotics Competition. Implemented Django REST API, ReactJS frontend (1500+ visitors), Python PIP package (1000+ downloads). Visit <a href='https://statbotics.io' target="_blank" rel="noopener noreferrer">statbotics.io</a>!</p>
+            array={[{key:0, label:'Python'}, {key:1, label:'NumPy'}, {key:2, label:'Django'}, {key:3, label:'REST APIs'}, {key:4, label:'ReactJS'}, {key:5, label: 'HTML/CSS'}, {key:6, label:'MySQL'}, {key:7, label:'Google Cloud Platform'}, {key:8, label:'Travis CI'}]}
+            github="https://github.com/avgupta456/Statbotics"
           />
         </div>
         <div className={styles.column}>
           <FancyHeaderCard
-            name="Statbotics"
-            date="August 2019 - Present"
-            description="Developing a website delivering statistics and analysis for the high school FRC robotics competition. Data collection and analysis in Python, displayed with Django/React."
-            array={[{key:0,label:'Python'}, {key:1,label:'Django'}, {key:2,label:'React'}, {key:3,label:'MySQL'}, {key:5,label:'Web APIs'}]}
-            github="https://github.com/avgupta456/Statbotics"
+            name="DANTE (Deep Learning Research)"
+            date="January 2020 - Present"
+            description="Developing an end-to-end deep learning pipeline studying social group phenomena in the context of human-robot interaction with custom data preprocessing, model architecture, loss function, and metrics."
+            array={[{key:0, label:'Python'}, {key:1, label:'PyTorch'}, {key:2, label:'TensorFlow'}, {key:3,label:'Deep Learning'}]}
+            github="https://github.com/avgupta456/cpsc290"
           />
         </div>
         <div className={styles.column}>
           <FancyHeaderCard
             name="YHack Website"
             date="March 2020 - Present"
-            description="Leading a team of developers revamping the YHack website, used to advertise and accept applications for Yale's largest annual hackathon. Emphasis on updating the tech stack to modern frameworks without sacrificing functionality."
-            array={[{key:0,label:'Django'}, {key:1,label:'React'}, {key:2,label:'Postgres'}, {key:3,label:'Heroku'}]}
+            description="Lead the YHack Tech Team in developing YHack website, registration, and judging process for 2020 hackathon. Emphasis on updating the tech stack to modern frameworks without sacrificing functionality."
+            array={[{key:0,label:'Django'}, {key:1,label:'HTML/CSS'}, {key:2,label:'Postgres'}, {key:3,label:'Heroku'}]}
             github="https://github.com/Y-Hack/django-yhack"
           />
         </div>
@@ -127,7 +127,7 @@ export default function Projects() {
           <FancyHeaderCard
             name="Personal Website"
             date="May 2020"
-            description="Built a personal website from scratch using React, HTML/CSS, and the Material-UI component library to display my portfolio and improve my web development skills."
+            description="Built a personal website from scratch using React, HTML/CSS, and the Material-UI component library."
             array={[{key:0,label:'React'}, {key:1,label:'HTML/CSS'}, {key:2,label:'Material-UI'}, {key:3,label:'CI/CD'}]}
             github="https://github.com/avgupta456/personal_website"
           />
