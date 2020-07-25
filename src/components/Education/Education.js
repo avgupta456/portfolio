@@ -46,11 +46,11 @@ export default function Education() {
             </Typography>
             <br/>
             <Typography>
-              <b>Relavant Coursework:</b> CPSC 223 Data Structures, CPSC 290 Directed Research, MATH 230 Vector Calculus, MATH 244 Discrete Mathematics
+              <b>Relavant Coursework:</b> CPSC 323 Systems Programming, CPSC 223 Data Structures, CPSC 290 Directed Research, MATH 330 Probability, MATH 230 Vector Calculus and Linear Algebra, MATH 244 Discrete Mathematics
             </Typography>
             <br/>
             <Typography>
-              <b>Activities:</b> Yale Computer Society, YHack Leadership, Yale Jashan Bhangra, Yale Climbing Team, Yale Undergraduate Aerospace Assosciation
+              <b>Activities:</b> Yale Computer Society, YHack Leadership, Yale Interactive Machines Group, Yale Jashan Bhangra, Yale Climbing Team
             </Typography>
           </div>
         </ExpansionPanelDetails>
