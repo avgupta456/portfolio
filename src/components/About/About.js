@@ -82,7 +82,7 @@ export default function About() {
               I am a member of the Yale Interactive Machines Group, where I conduct research in the field of human-robot interaction using deep learning.
               I'm also a developer for the Yale Computer Society, and lead the tech team for YHack, Yale’s largest annual hackathon.
               This past summer, I interned at RTI International as a data warehouse intern.
-              In my free time, I work on <a target='_blank' href='https://statbotics.io'>statbotics.io</a>, my quarantine programming project. I also enjoy rock climbing and dancing.
+              In my free time, I work on <a target='_blank' rel="noopener noreferrer" href='https://statbotics.io'>statbotics.io</a>, my quarantine programming project. I also enjoy rock climbing and dancing.
             </Typography>
             <br/>
             <Typography>
