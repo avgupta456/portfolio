@@ -50,29 +50,29 @@ export default function Timeline(props) {
         title = <Typography variant="h6" className="vertical-timeline-element-title">Undergraduate Researcher | Yale University (<a href='http://interactive-machines.com/' target="_blank" rel="noopener noreferrer">Interactive Machines Group</a>)</Typography>
         location = "New Haven, Connecticut"
         date = "January 2020 - Present"
-        details = "Developing a deep learning pipeline studying social group phenomena in the context of human-robot interaction (HRI); to be implemented on the Yale IMG Shutter Robot. Using Python, TensorFlow, and ROS."
+        details = "Developing an end-to-end deep learning pipeline studying social group phenomena in the context of human-robot interaction with custom data preprocessing, model architecture, loss function, and metrics."
         color = {primary}
       />
       <TimelineElement
         title = <Typography variant="h6" className="vertical-timeline-element-title">Data Warehouse Intern | <a href='https://www.rti.org/' target="_blank" rel="noopener noreferrer">RTI International</a></Typography>
         location = "Raleigh, North Carolina"
-        date = "May 2020 - Present"
-        details = "Incoming Data Warehouse Intern at RTI International"
+        date = "May 2020 - August 2020"
+        details = "Designed campus monitoring dashboard to visualize temporal building occupancy using SQL, Power BI. Implemented automated demand prioritization system for the BI team, reducing preparation time by 80%."
         color = {primary}
       />
       <TimelineElement
         title = <Typography variant="h6" className="vertical-timeline-element-title">Computer Science Instructor | <a href='https://junilearning.com/' target="_blank" rel="noopener noreferrer">Juni Learning</a></Typography>
         location = "Remote"
-        date = "February 2020 - Present"
-        details = "Teach middle school and high school students computer science fundamentals (in Java and Python) through the online Juni Learning platform."
+        date = "February 2020 - July 2020"
+        details = "Taught middle school and high school students computer science fundamentals (in Java and Python) through the online Juni Learning platform."
         color = {primary}
       />
       <TimelineElement
         title = <Typography variant="h6" className="vertical-timeline-element-title">Undergraduate Researcher | Yale University (<a href='https://yale-lily.github.io/' target="_blank" rel="noopener noreferrer">LILY Lab</a>)</Typography>
         location = "New Haven, Connecticut"
         date = "August 2019 - December 2019"
-        details = <p>Developed machine learning models classifying salient events in physics simulations as part of a larger project studying implicit physical reasoning in natural language processing.
-          Paper available <a href='https://arxiv.org/abs/2005.00730' target="_blank" rel="noopener noreferrer">here</a></p>
+        details = <p>Implemented machine learning model to classify salient events in 2D physics simulations; part of a larger work studying implicit physical reasoning in natural language processing
+          Paper available <a href='https://arxiv.org/abs/2005.00730' target="_blank" rel="noopener noreferrer">here</a>.</p>
         color = {primary}
       />
       <TimelineElement
