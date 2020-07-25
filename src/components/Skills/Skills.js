@@ -48,17 +48,17 @@ function Panel({header, array}) {
 }
 
 export default function Skills() {
-  const languages = [{name:"Python", score:90}, {name:"Java", score: 70}, {name:"C/C++", score: 70}, {name: "Javascript", score: 60}, {name: "HTML/CSS", score: 50}, {name: "R", score: 30}]
-  const frameworks = [{name:"NumPy", score:90}, {name:"TensorFlow", score: 70}, {name:"ReactJS", score: 60}, {name:"Pandas", score: 60}, {name:"Django", score: 50}]
-  const ml = [{name:"Neural Network", score: 80}, {name: "Visualization", score: 70}, {name: "PCA", score: 60}, {name: "SVM", score: 50}]
-  const concepts = [{name:"Git", score:90}, {name:"Web APIs", score:80}, {name:"Data Structures", score: 70}, {name:"Algorithms", score:70}]
+  const languages = [{name:"Python", score:90}, {name:"Java", score: 70}, {name:"C/C++", score: 70}, {name:"SQL", score: 60}, {name:"Javascript", score: 60}, {name:"HTML/CSS", score: 50}]
+  const frameworks = [{name:"NumPy", score:90}, {name:"Django", score: 80}, {name:"ReactJS", score: 70}, {name:"PyTorch", score: 60}, {name:"TensorFlow", score: 50}, {name:"Pandas", score: 50}]
+  const concepts = [{name:"Git", score:90}, {name:"REST APIs", score:80}, {name:"Google Cloud", score: 70}, {name:"Databases", score:60}, {name:"CI/CD", score: 50}]
+  const ml = [{name:"Neural Networks", score: 80}, {name:"Visualization", score: 70}, {name:"PCA", score: 60}, {name:"SVM", score: 50}]
 
   return (
     <div className={styles.row}>
       <Panel header="Programming Languages" array={languages}/>
       <Panel header="Libraries/Frameworks" array={frameworks}/>
-      <Panel header="Machine Learning" array={ml}/>
       <Panel header="Concepts" array={concepts}/>
+      <Panel header="Machine Learning" array={ml}/>
     </div>
   );
 }
