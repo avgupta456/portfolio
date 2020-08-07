@@ -86,7 +86,7 @@ export default function About() {
             </Typography>
             <br/>
             <Typography>
-              I am actively seeking internship opportunities for <b>Summer 2021</b>. Please reach out, I'd love to chat!
+              I am actively seeking internship opportunities for <b>Fall 2020, Spring 2021, and Summer 2021</b>. Please reach out, I'd love to chat!
             </Typography>
             <br/>
             <Divider/>
