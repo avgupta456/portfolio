@@ -56,7 +56,7 @@ export default function Timeline(props) {
       <TimelineElement
         title = <Typography variant="h6" className="vertical-timeline-element-title">Data Warehouse Intern | <a href='https://www.rti.org/' target="_blank" rel="noopener noreferrer">RTI International</a></Typography>
         location = "Raleigh, North Carolina"
-        date = "May 2020 - August 2020"
+        date = "June 2020 - August 2020"
         details = "Designed campus monitoring dashboard to visualize temporal building occupancy, saving an estimated $100,000. Implemented automated demand prioritization system for the BI team, reducing manual preparation time by 80%"
         color = {primary}
       />
@@ -71,7 +71,7 @@ export default function Timeline(props) {
         title = <Typography variant="h6" className="vertical-timeline-element-title">Undergraduate Researcher | Yale University (<a href='https://yale-lily.github.io/' target="_blank" rel="noopener noreferrer">LILY Lab</a>)</Typography>
         location = "New Haven, Connecticut"
         date = "August 2019 - December 2019"
-        details = <p>Trained machine learning model to classify salient events in 2D physics simulations with 91% accuracy. Contributed to research paper studying implicit physical reasoning in NLP. 
+        details = <p>Trained machine learning model to classify salient events in 2D physics simulations with 91% accuracy. Contributed to research paper studying implicit physical reasoning in NLP.
           Paper available <a href='https://arxiv.org/abs/2005.00730' target="_blank" rel="noopener noreferrer">here</a>.</p>
         color = {primary}
       />
