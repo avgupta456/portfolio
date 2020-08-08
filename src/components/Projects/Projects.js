@@ -100,7 +100,7 @@ export default function Projects() {
           <FancyHeaderCard
             name="Statbotics.io"
             date="January 2020 - Present"
-            description=<p>Developing a full-stack open-source data analytics platform for the FIRST Robotics Competition. Implemented Django REST API, ReactJS frontend (1500+ visitors), Python PIP package (1000+ downloads). Visit <a href='https://statbotics.io' target="_blank" rel="noopener noreferrer">statbotics.io</a>!</p>
+            description=<p>Establishing an open-source full-stack data analytics platform for the FIRST Robotics Competition. Developing Django REST API, ReactJS frontend (2,000+ visitors), Python PIP package (1,500+ downloads). Visit <a href='https://statbotics.io' target="_blank" rel="noopener noreferrer">statbotics.io</a>!</p>
             array={[{key:0, label:'Python'}, {key:1, label:'NumPy'}, {key:2, label:'Django'}, {key:3, label:'REST APIs'}, {key:4, label:'ReactJS'}, {key:5, label: 'HTML/CSS'}, {key:6, label:'MySQL'}, {key:7, label:'Google Cloud Platform'}, {key:8, label:'Travis CI'}]}
             github="https://github.com/avgupta456/Statbotics"
           />
@@ -109,7 +109,7 @@ export default function Projects() {
           <FancyHeaderCard
             name="DANTE (Deep Learning Research)"
             date="January 2020 - Present"
-            description="Developing an end-to-end deep learning pipeline studying social group phenomena in the context of human-robot interaction with custom data preprocessing, model architecture, loss function, and metrics."
+            description="Building an end-to-end deep learning pipeline analyzing social group phenomena for human-robot interaction. Optimizing custom data preprocessing, model architecture, and loss function to improve prior metrics by 14%"
             array={[{key:0, label:'Python'}, {key:1, label:'PyTorch'}, {key:2, label:'TensorFlow'}, {key:3,label:'Deep Learning'}]}
             github="https://github.com/avgupta456/cpsc290"
           />
@@ -118,9 +118,18 @@ export default function Projects() {
           <FancyHeaderCard
             name="YHack Website"
             date="March 2020 - Present"
-            description="Lead the YHack Tech Team in developing YHack website, registration, and judging process for 2020 hackathon. Emphasis on updating the tech stack to modern frameworks without sacrificing functionality."
-            array={[{key:0,label:'Django'}, {key:1,label:'HTML/CSS'}, {key:2,label:'Postgres'}, {key:3,label:'Heroku'}]}
+            description="Manage six developers designing the YHack frontend, YHack application system serving 2,000+ candidates."
+            array={[{key:0, label:'Django'}, {key:1, label:'HTML/CSS'}, {key:2, label:'Postgres'}, {key:3, label:'Heroku'}]}
             github="https://github.com/Y-Hack/django-yhack"
+          />
+        </div>
+        <div className={styles.column}>
+          <FancyHeaderCard
+            name="CourseTable"
+            date="July 2020 - Present"
+            description="Contributing to team redesigning CourseTable, Yale’s leading course search website, with modern frameworks. Spearheading initiative using NLP on 10,000+ course descriptions to predict similarity, sentiment, keywords, etc."
+            array={[{key:0, label:'Python'}, {key:1, label:'GraphQL'}, {key:2, label:'Hasura'}, {key:3, label:'ReactJS'}, {key:4, label:'Docker'}, {key:5, label:'NLP'}]}
+            github="https://github.com/coursetable/coursetable"
           />
         </div>
         <div className={styles.column}>
@@ -137,7 +146,7 @@ export default function Projects() {
             name="Project Horus"
             date="September 2019"
             description="Developed a receipt scanning app to detect healthy spending habits during the 2019 HackMIT event. Won the Instabase API sponsor award and the Financial Technology Track"
-            array={[{key:0,label:'Python'}, {key:1,label:'AWS Textract'}, {key:2,label:'NLP'}, {key:3,label:'OCR'}, {key:4,label:'HTML/CSS'}]}
+            array={[{key:0, label:'Python'}, {key:1, label:'AWS Textract'}, {key:2, label:'NLP'}, {key:3, label:'OCR'}, {key:4, label:'HTML/CSS'}]}
             github="https://github.com/avgupta456/HackMIT-2019"
           />
         </div>

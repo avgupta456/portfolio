@@ -50,8 +50,8 @@ function Panel({header, array}) {
 export default function Skills() {
   const languages = [{name:"Python", score:90}, {name:"Java", score: 70}, {name:"C/C++", score: 70}, {name:"SQL", score: 60}, {name:"Javascript", score: 60}, {name:"HTML/CSS", score: 50}]
   const frameworks = [{name:"NumPy", score:90}, {name:"Django", score: 80}, {name:"ReactJS", score: 70}, {name:"PyTorch", score: 60}, {name:"TensorFlow", score: 50}, {name:"Pandas", score: 50}]
-  const concepts = [{name:"Git", score:90}, {name:"REST APIs", score:80}, {name:"Google Cloud", score: 70}, {name:"Databases", score:60}, {name:"CI/CD", score: 50}]
-  const ml = [{name:"Neural Networks", score: 80}, {name:"Visualization", score: 70}, {name:"PCA", score: 60}, {name:"SVM", score: 50}]
+  const concepts = [{name:"Git", score:90}, {name:"REST APIs", score:80}, {name:"GCP", score: 70}, {name:"Databases", score:60}, {name:"CI/CD", score: 50}]
+  const ml = [{name:"Neural Networks", score: 80}, {name:"Visualization", score: 70}, {name:"NLP", score: 70}, {name:"PCA", score: 60}]
 
   return (
     <div className={styles.row}>
