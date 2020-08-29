@@ -10,7 +10,7 @@
 }
 
 .left_column {
-  flex: 1;  /* grow */
+  flex: 1; /* grow */
 }
 
 .right_column {
@@ -35,16 +35,16 @@
 }
 
 @media (max-width: 900px) {
-    .left_column {
-      flex: none;
-      width: 100%;
-    }
+  .left_column {
+    flex: none;
+    width: 100%;
+  }
 
-    .right_column {
-      flex: none;
-      width: 100%;
-      margin-left: 0px;
-    }
+  .right_column {
+    flex: none;
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 620px) {

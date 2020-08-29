@@ -61,19 +61,18 @@
 }
 
 .column {
-  flex: 1;  /* grow */
+  flex: 1; /* grow */
   min-width: 40%;
   max-width: 45%;
   margin: 20px;
 }
 
-
 @media (max-width: 900px) {
-    .column {
-      flex: none;
-      width: 100%;
-      min-width: none;
-      max-width: none;
-      margin: 20px 0px;
-    }
+  .column {
+    flex: none;
+    width: 100%;
+    min-width: none;
+    max-width: none;
+    margin: 20px 0px;
+  }
 }

@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { Paper, Typography } from '@material-ui/core';
-import styles from './Awards.module.css'
+import { Paper, Typography } from "@material-ui/core";
+import styles from "./Awards.module.css";
 
-function Award({name, desc}) {
+function Award({ name, desc }) {
   return (
     <div>
-      <br/>
+      <br />
       <Paper className={styles.padding}>
         <Typography variant="h6">{name}</Typography>
         <Typography>{desc}</Typography>

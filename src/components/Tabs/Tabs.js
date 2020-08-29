@@ -1,9 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import { makeStyles, Theme } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
-import { Header, About, Experience, Education, Projects, Skills, Awards, ButtonBar } from './..'
-import styles from './Tabs.module.css'
+import { makeStyles, Theme } from "@material-ui/core/styles";
+import { AppBar, Tabs, Tab, Box, Typography } from "@material-ui/core";
+import {
+  Header,
+  About,
+  Experience,
+  Education,
+  Projects,
+  Skills,
+  Awards,
+  ButtonBar,
+} from "./..";
+import styles from "./Tabs.module.css";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -21,11 +30,7 @@ function TabPanel(props: TabPanelProps) {
       id={`scrollable-auto-tabpanel-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box p={3}>
-          {children}
-        </Box>
-      )}
+      {value === index && <Box p={3}>{children}</Box>}
     </div>
   );
 }
@@ -46,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   scroller: {
     flexGrow: 0,
-  }
+  },
 }));
 
 export default function SimpleTabs() {
@@ -61,7 +66,7 @@ export default function SimpleTabs() {
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs
-          classes={{root: classes.tab_root, scroller: classes.scroller}}
+          classes={{ root: classes.tab_root, scroller: classes.scroller }}
           value={value}
           onChange={handleChange}
           variant="scrollable"
@@ -77,37 +82,45 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Header/>
-        <About/>
+        <Header />
+        <About />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Header/>
-        <Experience/>
+        <Header />
+        <Experience />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Header/>
-        <Education/>
+        <Header />
+        <Education />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Header/>
-        <Projects/>
+        <Header />
+        <Projects />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Header/>
-        <Skills/>
+        <Header />
+        <Skills />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <Header/>
-        <Awards/>
+        <Header />
+        <Awards />
       </TabPanel>
       <TabPanel value={value} index={6}>
-        <Header/>
+        <Header />
         <Typography className={styles.center}>
-          If you are interested in working with me, please contact me via email, at <a href="mailto:abhijit.gupta@yale.edu" target='_blank' rel="noopener noreferrer">abhijit.gupta@yale.edu</a>.
-          I look forward to discussing, thank you!
+          If you are interested in working with me, please contact me via email,
+          at{" "}
+          <a
+            href="mailto:abhijit.gupta@yale.edu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            abhijit.gupta@yale.edu
+          </a>
+          . I look forward to discussing, thank you!
         </Typography>
-        <br/>
-        <ButtonBar/>
+        <br />
+        <ButtonBar />
       </TabPanel>
     </div>
   );
