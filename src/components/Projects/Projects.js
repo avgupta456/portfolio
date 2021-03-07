@@ -113,14 +113,47 @@ export default function Projects() {
       <div className={styles.row}>
         <div className={styles.column}>
           <FancyHeaderCard
-            name="Statbotics.io"
-            date="January 2020 - Present"
+            name="QuickBites"
+            date="October 2020 - January 2021"
             description={
               <p>
-                Establishing an open-source full-stack data analytics platform
-                for the FIRST Robotics Competition. Developing Django REST API,
-                ReactJS frontend (2,000+ visitors), Python PIP package (1,500+
-                downloads). Visit{' '}
+                Developed a Python Flask API, React Native mobile application to
+                query Doordash, Uber Eats, and Grubhub for the best food
+                delivery deals. Published to Google Play and the App Store (500+
+                users, 4,000+ screen views). Visit{' '}
+                <a
+                  href="https://quickbites.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  quickbites.app
+                </a>
+                !
+              </p>
+            }
+            array={[
+              { key: 0, label: 'Python' },
+              { key: 1, label: 'Flask' },
+              { key: 2, label: 'REST APIs' },
+              { key: 3, label: 'GraphQL' },
+              { key: 4, label: 'React Native' },
+              { key: 5, label: 'Expo' },
+              { key: 6, label: 'HTML/CSS' },
+              { key: 7, label: 'Google Cloud Platform' },
+            ]}
+            github="https://github.com/avgupta456/quickbites"
+          />
+        </div>
+        <div className={styles.column}>
+          <FancyHeaderCard
+            name="Statbotics.io"
+            date="January 2020 - August 2020"
+            description={
+              <p>
+                Established an open-source full-stack data analytics platform
+                for the FIRST Robotics Competition. Developed Django REST API,
+                ReactJS frontend (10,000+ page views), Python PIP package
+                (10,000+ installs). Visit{' '}
                 <a
                   href="https://statbotics.io"
                   target="_blank"
@@ -142,7 +175,7 @@ export default function Projects() {
               { key: 7, label: 'Google Cloud Platform' },
               { key: 8, label: 'Travis CI' },
             ]}
-            github="https://github.com/avgupta456/Statbotics"
+            github="https://github.com/statbotics/statbotics"
           />
         </div>
         <div className={styles.column}>
@@ -163,12 +196,13 @@ export default function Projects() {
           <FancyHeaderCard
             name="YHack Website"
             date="March 2020 - Present"
-            description="Manage six developers designing the YHack frontend, YHack application system serving 2,000+ candidates."
+            description="Manage six developers designing the YHack frontend, YHack application system serving 2,000+ candidates. Additionally develop standalone team formation, project juding tools."
             array={[
-              { key: 0, label: 'Django' },
-              { key: 1, label: 'HTML/CSS' },
-              { key: 2, label: 'Postgres' },
-              { key: 3, label: 'Heroku' },
+              { key: 0, label: 'ReactJS' },
+              { key: 1, label: 'TailwindCSS' },
+              { key: 2, label: 'Python' },
+              { key: 3, label: 'Django' },
+              { key: 5, label: 'Heroku' },
             ]}
             github="https://github.com/Y-Hack/django-yhack"
           />

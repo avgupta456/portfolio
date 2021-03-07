@@ -15,11 +15,10 @@ export default function Header() {
       <div className={styles.fix_height}>
         <TypistLoop interval={1000}>
           {[
-            'Computer Scientist',
             'Problem-Solver',
             'Data Scientist',
             'Full Stack Developer',
-            'Researcher',
+            'ML Researcher',
           ].map((text) => (
             <Typist
               key={text}

@@ -100,8 +100,15 @@ export default function About() {
                 YHack
               </a>{' '}
               and contribute to the Yale Computer Society and Yale
-              Entrepreneurial Society. I have previously interned with RTI
-              International and{' '}
+              Entrepreneurial Society. I have previously interned with{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.rti.org/"
+              >
+                RTI International
+              </a>{' '}
+              and{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -144,6 +151,8 @@ export default function About() {
               . I also enjoy dancing and rock climbing. Please feel free to
               reach out!
             </Typography>
+            <br />
+            <Typography>Last Updated: 3/7/2021</Typography>
             <br />
             <Divider />
             <br />
