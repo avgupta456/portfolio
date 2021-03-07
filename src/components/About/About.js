@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import { makeStyles } from "@material-ui/core/styles";
-import { Typography, Button, Avatar, Divider } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
+import { Typography, Button, Avatar, Divider } from '@material-ui/core';
 
-import styles from "./About.module.css";
-import pic from "./../../static/images/avatar.jpg";
+import styles from './About.module.css';
+import pic from '../../static/images/avatar.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    "& > *": {
+    display: 'flex',
+    '& > *': {
       margin: theme.spacing(1),
     },
   },
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     margin: theme.spacing(1),
-    flex: "0 0 100px",
+    flex: '0 0 100px',
   },
 }));
 
@@ -59,7 +59,7 @@ export function ButtonBar() {
           variant="outlined"
           color="secondary"
           className={classes.button}
-          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          href={`${process.env.PUBLIC_URL}/resume.pdf`}
           target="_blank"
         >
           <Typography>Resume</Typography>
@@ -79,28 +79,25 @@ export default function About() {
         <div className={styles.left_column}>
           <div className={styles.text}>
             <Typography>
-              Hello! My name is Abhijit Gupta, and I am a rising{" "}
-              <b>junior at Yale University</b>, majoring in Computer Science and
-              Applied Mathematics. I am currently on a gap semester, working as
-              a <b>Software Engineer at Gatherly</b>. At Yale, I am a member of
-              the Interactive Machines Group, where I conduct research in the
-              field of human-robot interaction using deep learning. I also lead
-              the tech team for YHack and contribute as developer for the Yale
-              Computer Society. In my free time, I work on{" "}
+              Hello! My name is Abhijit Gupta, and I am a{' '}
+              <b>sophomore at Yale University</b>, majoring in Computer Science
+              with a certificate in Statistics and Data Science. At Yale, I am a
+              member of the Interactive Machines Group, where I conduct research
+              in the field of human-robot interaction using deep learning. I
+              also lead the tech team for YHack and contribute to the Yale
+              Computer Society and Yale Entrepreneurial Society. I have
+              previously interned with RTI International and Gatherly, and will
+              be interning with Jane Street in Summer 2021, and Sentry.io in
+              Fall 2021. In my free time, I work on side projects such as{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://statbotics.io"
               >
                 statbotics.io
-              </a>
-              . I also enjoy rock climbing and dancing.
-            </Typography>
-            <br />
-            <Typography>
-              I am actively seeking internship opportunities for{" "}
-              <b>Spring 2021 and Summer 2021</b>. Please reach out, I'd love to
-              chat!
+              </a>{' '}
+              and QuickBites. I also enjoy dancing and rock climbing. Please
+              feel free to reach out!
             </Typography>
             <br />
             <Divider />

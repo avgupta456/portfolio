@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 import {
   ExpansionPanel,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
-} from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
+    width: '100%',
   },
   panel: {
     backgroundColor: theme.palette.primary.main,
@@ -24,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(15),
     color: theme.palette.common.white,
     marginRight: 0,
-    marginLeft: "auto",
+    marginLeft: 'auto',
   },
 }));
 
 export default function Education() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState("panel1");
+  const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -39,8 +39,8 @@ export default function Education() {
   return (
     <div className={classes.root}>
       <ExpansionPanel
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
+        expanded={expanded === 'panel1'}
+        onChange={handleChange('panel1')}
       >
         <ExpansionPanelSummary
           className={classes.panel}
@@ -54,7 +54,7 @@ export default function Education() {
         <ExpansionPanelDetails>
           <div>
             <Typography>
-              Pursuing a double major in <b>Computer Science</b> and{" "}
+              Pursuing a double major in <b>Computer Science</b> and{' '}
               <b>Applied Mathematics</b>
             </Typography>
             <br />
@@ -74,8 +74,8 @@ export default function Education() {
       </ExpansionPanel>
       <br />
       <ExpansionPanel
-        expanded={expanded === "panel2"}
-        onChange={handleChange("panel2")}
+        expanded={expanded === 'panel2'}
+        onChange={handleChange('panel2')}
       >
         <ExpansionPanelSummary
           className={classes.panel}
@@ -109,8 +109,8 @@ export default function Education() {
       </ExpansionPanel>
       <br />
       <ExpansionPanel
-        expanded={expanded === "panel3"}
-        onChange={handleChange("panel3")}
+        expanded={expanded === 'panel3'}
+        onChange={handleChange('panel3')}
       >
         <ExpansionPanelSummary
           className={classes.panel}

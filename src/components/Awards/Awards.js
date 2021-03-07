@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { Paper, Typography } from "@material-ui/core";
-import styles from "./Awards.module.css";
+import { Paper, Typography } from '@material-ui/core';
+import styles from './Awards.module.css';
 
 function Award({ name, desc }) {
   return (
@@ -14,6 +15,11 @@ function Award({ name, desc }) {
     </div>
   );
 }
+
+Award.propTypes = {
+  name: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+};
 
 export default function Awards() {
   return (

@@ -1,53 +1,43 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import { AppBar, Tabs, Tab, Box, Typography } from "@material-ui/core";
-import {
-  Header,
-  About,
-  Experience,
-  Education,
-  Projects,
-  Skills,
-  Awards,
-  ButtonBar,
-} from "./..";
-import styles from "./Tabs.module.css";
+import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
 
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: any;
-  value: any;
-}
+import Header from '../Header/Header';
+import About, { ButtonBar } from '../About/About';
+import Education from '../Education/Education';
+import Experience from '../Experience/Experience';
+import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
+import Awards from '../Awards/Awards';
+import styles from './Tabs.module.css';
 
-function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
-
+function TabPanel({ children, value, index }) {
   return (
     <div
       role="tabpanel"
       hidden={value !== index}
       id={`scrollable-auto-tabpanel-${index}`}
-      {...other}
     >
       {value === index && <Box p={3}>{children}</Box>}
     </div>
   );
 }
 
-function a11yProps(index: any) {
-  return {
-    id: `scrollable-auto-tab-${index}`,
-  };
-}
+TabPanel.propTypes = {
+  children: PropTypes.any.isRequired,
+  value: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
+};
 
-const useStyles = makeStyles((theme: Theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
   },
   tab_root: {
-    justifyContent: "center",
+    justifyContent: 'center',
   },
   scroller: {
     flexGrow: 0,
@@ -58,7 +48,7 @@ export default function SimpleTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+  const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
@@ -72,13 +62,13 @@ export default function SimpleTabs() {
           variant="scrollable"
           scrollButtons="on"
         >
-          <Tab label="About" {...a11yProps(0)} />
-          <Tab label="Experience" {...a11yProps(1)} />
-          <Tab label="Education" {...a11yProps(2)} />
-          <Tab label="Projects" {...a11yProps(3)} />
-          <Tab label="Skills" {...a11yProps(4)} />
-          <Tab label="Awards" {...a11yProps(5)} />
-          <Tab label="Contact" {...a11yProps(6)} />
+          <Tab label="About" id="scrollable-auto-tab-0" />
+          <Tab label="Experience" id="scrollable-auto-tab-1" />
+          <Tab label="Education" id="scrollable-auto-tab-2" />
+          <Tab label="Projects" id="scrollable-auto-tab-3" />
+          <Tab label="Skills" id="scrollable-auto-tab-4" />
+          <Tab label="Awards" id="scrollable-auto-tab-5" />
+          <Tab label="Contact" id="scrollable-auto-tab-6" />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -109,7 +99,7 @@ export default function SimpleTabs() {
         <Header />
         <Typography className={styles.center}>
           If you are interested in working with me, please contact me via email,
-          at{" "}
+          at{' '}
           <a
             href="mailto:abhijit.gupta@yale.edu"
             target="_blank"
