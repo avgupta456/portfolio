@@ -82,13 +82,50 @@ export default function About() {
               Hello! My name is Abhijit Gupta, and I am a{' '}
               <b>sophomore at Yale University</b>, majoring in Computer Science
               with a certificate in Statistics and Data Science. At Yale, I am a
-              member of the Interactive Machines Group, where I conduct research
-              in the field of human-robot interaction using deep learning. I
-              also lead the tech team for YHack and contribute to the Yale
-              Computer Society and Yale Entrepreneurial Society. I have
-              previously interned with RTI International and Gatherly, and will
-              be interning with Jane Street in Summer 2021, and Sentry.io in
-              Fall 2021. In my free time, I work on side projects such as{' '}
+              member of the{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://interactive-machines.gitlab.io/"
+              >
+                Interactive Machines Group
+              </a>
+              , where I conduct research in the field of human-robot interaction
+              using deep learning. I also lead the tech team for{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://yhack.org"
+              >
+                YHack
+              </a>{' '}
+              and contribute to the Yale Computer Society and Yale
+              Entrepreneurial Society. I have previously interned with RTI
+              International and{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://gatherly.io"
+              >
+                Gatherly
+              </a>
+              , and will be interning with{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://janestreet.com"
+              >
+                Jane Street
+              </a>{' '}
+              in Summer 2021, and{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://sentry.io"
+              >
+                Sentry.io
+              </a>{' '}
+              in Fall 2021. In my free time, I work on side projects such as{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,8 +133,16 @@ export default function About() {
               >
                 statbotics.io
               </a>{' '}
-              and QuickBites. I also enjoy dancing and rock climbing. Please
-              feel free to reach out!
+              and{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://quickbites.app"
+              >
+                QuickBites
+              </a>
+              . I also enjoy dancing and rock climbing. Please feel free to
+              reach out!
             </Typography>
             <br />
             <Divider />
