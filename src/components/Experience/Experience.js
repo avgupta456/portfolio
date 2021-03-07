@@ -64,19 +64,37 @@ export default function Timeline() {
       <TimelineElement
         title={
           <Typography variant="h6" className="vertical-timeline-element-title">
-            Software Engineer |{' '}
+            Incoming SWE Intern |{' '}
             <a
-              href="https://gatherly.io/"
+              href="http://sentry.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Gatherly
+              Sentry.io
             </a>
           </Typography>
         }
-        location="Remote"
-        date="August, 2020 - Present"
-        details="Implementing backend and frontend updates to Gatherly.io, improving website performance and user experience. Leveraging knowledge in JavaScript, TypeScript, NodeJS, ReactJS, Redux, HTML/CSS, GitHub"
+        location="San Francisco, California"
+        date="Expected August 2021 - December 2021"
+        details=""
+        color={primary}
+      />
+      <TimelineElement
+        title={
+          <Typography variant="h6" className="vertical-timeline-element-title">
+            Incoming Quant Trading Intern |{' '}
+            <a
+              href="http://janestreet.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jane Street
+            </a>
+          </Typography>
+        }
+        location="New York City, New York"
+        date="Expected June 2021 - August 2021"
+        details=""
         color={primary}
       />
       <TimelineElement
@@ -96,6 +114,24 @@ export default function Timeline() {
         location="New Haven, Connecticut"
         date="January 2020 - Present"
         details="Building an end-to-end deep learning pipeline analyzing social group phenomena for human-robot interaction. Optimizing custom data preprocessing, model architecture, and loss function to improve prior metrics by 14%"
+        color={primary}
+      />
+      <TimelineElement
+        title={
+          <Typography variant="h6" className="vertical-timeline-element-title">
+            Software Engineer |{' '}
+            <a
+              href="https://gatherly.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatherly
+            </a>
+          </Typography>
+        }
+        location="Remote"
+        date="August 2020 - December 2020"
+        details="Spearheaded data analytics initiative analyzing 1M+ user actions to extract actionable insight for 1k+ event hosts. Implemented automated payment system using Stripe API with subscriptions, discounts, and tiered pricing."
         color={primary}
       />
       <TimelineElement
