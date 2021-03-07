@@ -49,25 +49,27 @@ export default function Education() {
           <Typography variant="h6" className={classes.icon}>
             Yale University
           </Typography>
-          <Typography className={classes.date}>Expected May 2022</Typography>
+          <Typography className={classes.date}>Expected May 2023</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <div>
             <Typography>
-              Pursuing a double major in <b>Computer Science</b> and{' '}
-              <b>Applied Mathematics</b>
+              Pursuing a major in <b>Computer Science</b> and Certificate in{' '}
+              <b>Statistics and Data Science</b>
             </Typography>
             <br />
             <Typography>
-              <b>Relavant Coursework:</b> CPSC 290 Directed Research, CPSC 223
-              Data Structures, MATH 230 Vector Calculus and Linear Algebra, MATH
-              244 Discrete Mathematics
+              <b>Relavant Coursework:</b> CPSC 223: Data Structures, CPSC 290
+              Directed Research, CPSC 323: Systems Programming, CPSC 366:
+              Intensive Algorithms, CPSC 452: Deep Learning, MATH 230/231 Vector
+              Calculus and Linear Algebra, MATH 244 Discrete Mathematics,
+              S&amp;DS 230: R Programming
             </Typography>
             <br />
             <Typography>
-              <b>Activities:</b> Yale Computer Society, YHack Leadership, Yale
-              Interactive Machines Group, Yale Jashan Bhangra, Yale Climbing
-              Team
+              <b>Activities:</b> Yale Interactive Machines Group, YHack
+              Organizing Team, Yale Computer Society, Yale Entrepreneurial
+              Society Team
             </Typography>
           </div>
         </ExpansionPanelDetails>
