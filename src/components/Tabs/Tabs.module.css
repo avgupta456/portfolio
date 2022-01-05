@@ -1,9 +1,0 @@
-.center {
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-  .center {
-    text-align: left;
-  }
-}

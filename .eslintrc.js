@@ -1,33 +1,16 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  root: true,
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2018,
-    sourceType: 'module',
+    project: './tsconfig.eslint.json',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['@typescript-eslint'],
+  extends: ['next/core-web-vitals', 'airbnb', 'airbnb-typescript', 'prettier'],
   rules: {
-    'react/prefer-stateless-function': 'off',
-    'react/jsx-filename-extension': 'off',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-wrap-multilines': 'off',
-    'react/destructuring-assignment': 'off',
-    'react/no-did-update-set-state': 'off',
-    'react/forbid-prop-types': 'off',
-    'import/prefer-default-export': 'off',
-    'no-useless-constructor': 'off',
+    'react/function-component-definition': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'no-console': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    'react/button-has-type': 'off',
+    'react/no-array-index-key': 'off',
   },
 };
