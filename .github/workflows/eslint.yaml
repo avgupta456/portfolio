@@ -12,10 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Modules
-        run: |
-          cd frontend
-          yarn
+        run: yarn
       - name: Run ESLint
-        run: |
-          cd frontend
-          yarn eslint .
+        run: yarn eslint .
