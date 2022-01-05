@@ -26,7 +26,7 @@ const Header = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-full shadow-md dark:bg-zinc-900 sticky top-0 z-50">
-        <div className="p-4 flex flex-wrap">
+        <div className="container p-4 mx-auto flex flex-wrap">
           <div className="text-xl">Abhijit Gupta</div>
           <div className="flex ml-auto mr-4 items-center justify-center">
             {theme === 'dark' ? (
