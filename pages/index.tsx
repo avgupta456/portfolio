@@ -218,9 +218,8 @@ const Home: NextPage = () => (
       Projects
     </h1>
     <div className="p-4">
-      Recently, I have worked on GitHub Trends, Statbotics.io, Quickbites,
-      research, club projects, and this portfolio website. More details coming
-      soon!
+      Recently, I have worked on GitHub Trends, Statbotics.io, research, club
+      projects, and this portfolio website. More details coming soon!
     </div>
   </div>
 );
