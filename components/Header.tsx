@@ -28,7 +28,7 @@ const Header = () => {
       <div className="w-full shadow-md dark:bg-zinc-900 sticky top-0 z-50">
         <div className="container p-4 mx-auto flex flex-wrap">
           <div className="text-xl">Abhijit Gupta</div>
-          <div className="flex ml-auto mr-4 items-center justify-center">
+          <div className="flex ml-auto mr-4 items-center justify-center cursor-pointer">
             {theme === 'dark' ? (
               <FaRegSun
                 className="w-6 h-6"
