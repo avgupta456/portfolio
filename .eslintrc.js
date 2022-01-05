@@ -10,5 +10,6 @@ module.exports = {
     'react/function-component-definition': 'off',
     'react/jsx-props-no-spreading': 'off',
     'no-console': 'off',
+    'react/button-has-type': 'off',
   },
 };
