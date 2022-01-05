@@ -11,5 +11,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'no-console': 'off',
     'react/button-has-type': 'off',
+    'react/no-array-index-key': 'off',
   },
 };
