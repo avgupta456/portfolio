@@ -27,8 +27,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
 
-      <Script id="umami" src="https://umami-nine-zeta.vercel.app/umami.js" />
-
       <ThemeProvider attribute="class">
         <Layout>
           <Component {...pageProps} />
