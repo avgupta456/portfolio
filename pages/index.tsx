@@ -168,9 +168,225 @@ const Home: NextPage = () => (
     <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">
       Projects
     </h1>
-    <div className="p-4">
-      Recently, I have worked on GitHub Trends, Statbotics.io, and Hopscotch.
-      More details coming soon!
+    <div className="flex flex-wrap p-4">
+      {[
+        {
+          title: 'GitHub Trends',
+          description:
+            'GitHub Trends dives deep into the GitHub API to bring you insightful metrics on your contributions, broken by repository and language.',
+          startDate: 'May, 2020',
+          endDate: 'Present',
+          website: 'https://githubtrends.io',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/github-trends',
+              name: 'GitHub Repo',
+            },
+          ],
+          tags: ['GitHub API', 'Python', 'FastAPI', 'MongoDB', 'React'],
+          image: '/githubtrends.png',
+          stat: {
+            label: 'Key Stat',
+            stat: '2000+ users have created a GitHub Wrapped',
+          },
+        },
+        {
+          title: 'Statbotics',
+          description:
+            'Statbotics modernizes FRC data analytics by calculating and disseminating key metrics including Elo and component OPRs',
+          startDate: 'Sept, 2021',
+          endDate: 'Present',
+          website: 'https://statbotics.io',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/statbotics',
+              name: 'GitHub Repo',
+            },
+          ],
+          tags: ['Python', 'FastAPI', 'SQL', 'React', 'GCP'],
+          image: '/statbotics.png',
+          stat: {
+            label: 'Key Stat',
+            stat: 'Over 40,000 users have used Statbotics',
+          },
+        },
+        {
+          title: 'Hopscotch',
+          description:
+            'Hopscotch helps you discover suitable neighborhoods based on many factors: budget, grocery stores, gyms, subway lines, bike share, parks, safety, proximity to specific locations and more',
+          startDate: 'August, 2022',
+          endDate: 'August, 2022',
+          website: 'https://hopscotch.nyc',
+          links: [
+            {
+              link: 'https://www.producthunt.com/products/hopscotch-6',
+              name: 'Product Hunt',
+            },
+          ],
+          tags: ['Data Scraping', 'Jupyter', 'React', 'Tailwind'],
+          image: '/hopscotch.png',
+          stat: {
+            label: 'Key Fact',
+            stat: 'Built Hopscotch in just one week at HackLodge.',
+          },
+        },
+        {
+          title: 'GNN Explainability',
+          description:
+            'Extending existing GNN explanation algorithms for node and graph tasks to link prediction on social network and user-object graphs. Contributing to the open-source PyTorch Geometric library.',
+          startDate: 'Aug, 2022',
+          endDate: 'Present',
+          tags: ['Research', 'GNNs', 'Python', 'Pytorch Geometric'],
+          image: '/gnn.png',
+          stat: {
+            label: 'Key Fact',
+            stat: 'Working with Prof. Rex Ying at Yale',
+          },
+        },
+        {
+          title: 'VSCode Autocorrect',
+          description:
+            'Uses LLMs and Levenshtein distance to suggest corrections for typos and mental mistakes. Integrated with VSCode suggest directly in the IDE.',
+          startDate: 'November, 2022',
+          endDate: 'November, 2022',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/vscode-autocorrect',
+              name: 'GitHub Repo',
+            },
+          ],
+          tags: ['YHack', 'CodeBERT', 'FastAPI', 'TypeScript', 'VSCode'],
+          image: '/vscode.png',
+          stat: {
+            label: 'Key Fact',
+            stat: 'Built at YHack Mini 2022, 3rd Place',
+          },
+        },
+        {
+          title: 'Clockwork',
+          description:
+            'Clockwork takes your deadlines, events, and goals, and creates a balanced and healthy schedule, factoring in personal preferences.',
+          startDate: 'March, 2022',
+          endDate: 'March, 2022',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/yhack-2022',
+              name: 'GitHub Repo',
+            },
+          ],
+          tags: ['YHack', 'Python', 'Optimization', 'React', 'Tailwind'],
+          image: '/clockwork.png',
+          stat: {
+            label: 'Key Fact',
+            stat: 'Built at YHack 2022, 2nd Place',
+          },
+        },
+        {
+          title: 'Quickbites',
+          description:
+            'Quickbites integrated with Uber Eats, Doordash, and GrubHub to find the cheapest and fastest food delivery options based on your location, requirements, and preferences.',
+          startDate: 'Nov, 2020',
+          endDate: 'Jan, 2021',
+          tags: [
+            'Deprecated :(',
+            'APIs',
+            'Python',
+            'FastAPI',
+            'React Native',
+            'Expo',
+          ],
+          image: '/quickbites.png',
+          stat: {
+            label: 'Key Fact',
+            stat: 'Downloaded over 1000 times on the App Store',
+          },
+        },
+        {
+          title: 'Coursetable NLP',
+          description:
+            'Implemented similarity, sentiment, and topic analysis on Coursetable reviews using NLP techniques. Wrote a Medium article highlighting key Python libraries to build upon.',
+          startDate: 'August, 2020',
+          endDate: 'August, 2020',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/medium_nlp',
+              name: 'GitHub Repo',
+            },
+            {
+              link: 'https://medium.com/@avgupta456/natural-language-processing-nlp-dont-reinvent-the-wheel-8cf3204383dd',
+              name: 'Medium Article',
+            },
+          ],
+          tags: ['NLP', 'Python', 'Gensim'],
+          image: '/coursetable.png',
+        },
+      ].map((project, i) => (
+        <div key={i} className="w-full xl:w-1/2 h-128 p-4">
+          <div className="w-full h-full p-4 bg-gray-100 dark:bg-gray-900 shadow-lg rounded flex flex-col">
+            <div className="flex flex-row justify-between">
+              {project.website ? (
+                <a
+                  href={project.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl font-semibold text-blue-500 hover:text-blue-600 underline"
+                >
+                  {project.title}
+                </a>
+              ) : (
+                <span className="text-2xl font-semibold text-gray-800 dark:text-white">
+                  {project.title}
+                </span>
+              )}
+              <strong>
+                {project.startDate === project.endDate
+                  ? project.startDate
+                  : `${project.startDate} - ${project.endDate}`}
+              </strong>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400 mt-2 mb-1">
+              {project.description}
+            </p>
+            {project.stat && (
+              <p className="text-gray-600 dark:text-gray-400">
+                <strong>{project.stat.label}: </strong>
+                {project.stat.stat}
+              </p>
+            )}
+            <div className="flex flex-row flex-wrap mx-auto mt-4">
+              {(project.links || []).map((link, j) => (
+                <a
+                  key={j}
+                  href={link.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-500 hover:text-blue-600 underline bg-blue-100 rounded-full px-2 py-1 m-1"
+                >
+                  {link.name}
+                </a>
+              ))}
+              {project.tags.map((tag, j) => (
+                <span
+                  key={j}
+                  className="text-sm text-gray-600 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 rounded-full px-2 py-1 m-1"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            {/* Image with intrinsic aspect ratio and max width */}
+            <div className="my-2 relative w-full h-full rounded-lg overflow-hidden">
+              <Image
+                src={project.image}
+                alt={project.title}
+                layout="fill"
+                objectFit="contain"
+                className="mx-auto my-auto"
+              />
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 );
