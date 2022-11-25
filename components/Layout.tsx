@@ -9,10 +9,10 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => (
-  <div className="flex flex-col min-h-screen layout">
+  <>
     <Header />
-    <div className="flex-1">{children}</div>
-  </div>
+    <main>{children}</main>
+  </>
 );
 
 Layout.propTypes = {
