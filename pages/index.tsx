@@ -177,7 +177,12 @@ const Home: NextPage = () => (
           startDate: 'May, 2020',
           endDate: 'Present',
           website: 'https://githubtrends.io',
-          github: 'https://github.com/avgupta456/github-trends',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/github-trends',
+              name: 'GitHub Repo',
+            },
+          ],
           tags: ['GitHub API', 'Python', 'FastAPI', 'MongoDB', 'React'],
           image: '/githubtrends.png',
           stat: {
@@ -187,25 +192,42 @@ const Home: NextPage = () => (
         },
         {
           title: 'Statbotics',
-          description: 'TODO',
+          description:
+            'Statbotics modernizes FRC data analytics by calculating and disseminating key metrics including Elo and component OPRs',
           startDate: 'Sept, 2021',
           endDate: 'Present',
           website: 'https://statbotics.io',
-          github: 'https://github.com/avgupta456/statbotics',
+          links: [
+            {
+              link: 'https://github.com/avgupta456/statbotics',
+              name: 'GitHub Repo',
+            },
+          ],
           tags: ['Python', 'FastAPI', 'SQL', 'React', 'GCP'],
           image: '/statbotics.png',
+          stat: {
+            label: 'Key Stat',
+            stat: 'Over 40,000 users have used Statbotics',
+          },
         },
         {
           title: 'Hopscotch',
-          description: 'TODO',
+          description:
+            'Hopscotch helps you discover suitable neighborhoods based on many factors: budget, grocery stores, gyms, subway lines, bike share, parks, safety, proximity to specific locations and more',
           startDate: 'August, 2022',
           endDate: 'August, 2022',
           website: 'https://hopscotch.nyc',
-          tags: ['Data Scraping', 'Jupyter', 'React'],
+          links: [
+            {
+              link: 'https://www.producthunt.com/products/hopscotch-6',
+              name: 'Product Hunt',
+            },
+          ],
+          tags: ['Data Scraping', 'Jupyter', 'React', 'Tailwind'],
           image: '/hopscotch.png',
         },
       ].map((project, i) => (
-        <div key={i} className="w-full lg:w-1/2 h-112 p-4">
+        <div key={i} className="w-full lg:w-1/2 h-128 p-4">
           <div className="w-full h-full p-4 bg-gray-100 dark:bg-gray-900 shadow-lg rounded flex flex-col">
             <div className="flex flex-row justify-between">
               <a
@@ -231,17 +253,18 @@ const Home: NextPage = () => (
                 {project.stat.stat}
               </p>
             )}
-            <div className="flex flex-row flex-wrap mx-auto my-2">
-              {project.github && (
+            <div className="flex flex-row flex-wrap mx-auto mt-4">
+              {project.links.map((link, j) => (
                 <a
-                  href={project.website}
+                  key={j}
+                  href={link.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-blue-500 hover:text-blue-600 underline bg-blue-100 rounded-full px-2 py-1 m-1"
                 >
-                  GitHub Repo
+                  {link.name}
                 </a>
-              )}
+              ))}
               {project.tags.map((tag, j) => (
                 <span
                   key={j}
