@@ -184,7 +184,7 @@ const Home: NextPage = () => (
             },
           ],
           tags: ['GitHub API', 'Python', 'FastAPI', 'MongoDB', 'React'],
-          image: '/githubtrends.png',
+          image: '/projects/githubtrends.png',
           stat: {
             label: 'Key Stat',
             stat: '2000+ users have created a GitHub Wrapped',
@@ -204,7 +204,7 @@ const Home: NextPage = () => (
             },
           ],
           tags: ['Python', 'FastAPI', 'SQL', 'React', 'GCP'],
-          image: '/statbotics.png',
+          image: '/projects/statbotics.png',
           stat: {
             label: 'Key Stat',
             stat: 'Over 40,000 users have used Statbotics',
@@ -224,7 +224,7 @@ const Home: NextPage = () => (
             },
           ],
           tags: ['Data Scraping', 'Jupyter', 'React', 'Tailwind'],
-          image: '/hopscotch.png',
+          image: '/projects/hopscotch.png',
           stat: {
             label: 'Key Fact',
             stat: 'Built Hopscotch in just one week at HackLodge.',
@@ -237,7 +237,7 @@ const Home: NextPage = () => (
           startDate: 'Aug, 2022',
           endDate: 'Present',
           tags: ['Research', 'GNNs', 'Python', 'Pytorch Geometric'],
-          image: '/gnn.png',
+          image: '/projects/gnn.png',
           stat: {
             label: 'Key Fact',
             stat: 'Working with Prof. Rex Ying at Yale',
@@ -256,7 +256,7 @@ const Home: NextPage = () => (
             },
           ],
           tags: ['YHack', 'CodeBERT', 'FastAPI', 'TypeScript', 'VSCode'],
-          image: '/vscode.png',
+          image: '/projects/vscode.png',
           stat: {
             label: 'Key Fact',
             stat: 'Built at YHack Mini 2022, 3rd Place',
@@ -275,7 +275,7 @@ const Home: NextPage = () => (
             },
           ],
           tags: ['YHack', 'Python', 'Optimization', 'React', 'Tailwind'],
-          image: '/clockwork.png',
+          image: '/projects/clockwork.png',
           stat: {
             label: 'Key Fact',
             stat: 'Built at YHack 2022, 2nd Place',
@@ -295,7 +295,7 @@ const Home: NextPage = () => (
             'React Native',
             'Expo',
           ],
-          image: '/quickbites.png',
+          image: '/projects/quickbites.png',
           stat: {
             label: 'Key Fact',
             stat: 'Downloaded over 1000 times on the App Store',
@@ -318,7 +318,7 @@ const Home: NextPage = () => (
             },
           ],
           tags: ['NLP', 'Python', 'Gensim'],
-          image: '/coursetable.png',
+          image: '/projects/coursetable.png',
         },
       ].map((project, i) => (
         <div key={i} className="w-full xl:w-1/2 h-128 p-4">
