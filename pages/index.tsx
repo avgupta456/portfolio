@@ -321,7 +321,7 @@ const Home: NextPage = () => (
           image: '/coursetable.png',
         },
       ].map((project, i) => (
-        <div key={i} className="w-full lg:w-1/2 h-128 p-4">
+        <div key={i} className="w-full xl:w-1/2 h-128 p-4">
           <div className="w-full h-full p-4 bg-gray-100 dark:bg-gray-900 shadow-lg rounded flex flex-col">
             <div className="flex flex-row justify-between">
               {project.website ? (
