@@ -14,10 +14,10 @@ const Home: NextPage = () => (
     </h1>
     <div className="p-4 flex flex-wrap">
       <div className="w-full lg:w-2/3">
-        Hello! My name is Abhijit Gupta, and I am a{' '}
-        <strong>senior at Yale University</strong> majoring in Computer Science.
-        I have previously interned with Jane Street, Sentry.io, Gatherly, and
-        RTI International. In my free time, I work on side projects including{' '}
+        Hello! My name is Abhijit Gupta, and I am a senior at Yale University
+        majoring in Computer Science. I have previously interned with Jane
+        Street, Sentry.io, Gatherly, and RTI International. In my free time, I
+        work on side projects including{' '}
         <a
           href="https://www.githubtrends.io"
           target="_blank"
